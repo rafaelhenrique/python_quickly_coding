@@ -1,0 +1,10 @@
+>>> import re
+>>> m = re.search('\d{1,2}', '123456789')
+>>> m.group(0)
+'12'
+>>> m = re.search('\d{1,10}', '12345678910')
+>>> m.group(0)
+'1234567891'
+>>>
+
+Nessa expressão testo \d (decimais) {1,2} (de 1 ou 2 dígitos)
